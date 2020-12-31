@@ -1,0 +1,31 @@
+git clone https://github.com/USER/REPOSITORY_NAME.git
+git status
+echo "# Tutorial sobre GIT" >> README.md
+git status
+git add -A .
+git commit -m "first commit"
+git push origin master
+git status
+touch hola.txt
+echo "hola mundo" > hola.txt
+git add hola.txt
+git commit -m "loading hola.txt"
+git push origin master
+
+
+git diff
+git diff --staged
+git diff HEAD~1 hola.txt
+git diff HEAD~2 hola.txt
+git log
+git log --oneline
+
+git checkout CODE_NUMBER hola.txt
+git status
+git commit -m "recover first version"
+git status
+git push origin master
+
+
+git remote set-url origin https://github.com/USER/NEW_REPOSITORY_NAME.git
+git remote -v
